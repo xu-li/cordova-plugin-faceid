@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-faceid"
+    version="0.0.1">
+
+    <name>FaceID</name>
+    <description>A cordova plugin, a JS version of FaceID SDK</description>
+    <license>MIT</license>
+    <keywords>cordova,faceid</keywords>
+
+    <!-- js module-->
+    <js-module src="www/faceid.js" name="FaceID">
+        <clobbers target="FaceID" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FaceID">
+                <param name="android-package" value="xu.li.cordova.faceid.FaceID"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+
+
+        <source-file src="src/android/FaceID.java" target-dir="src/xu/li/cordova/faceid" />
+        <source-file src="src/android/licensemanager-v1.1.jar" target-dir="libs" />
+        <framework src="src/android/IDCardLib" custom="true" />
+    </platform>
+</plugin>

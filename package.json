@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-faceid",
+  "version": "0.0.1",
+  "description": "A cordova plugin for faceid sdk",
+  "cordova": {
+    "id": "cordova-plugin-faceid",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "faceid",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+        "<1.0.0": {
+          "cordova": ">=6.1.0",
+          "cordova-android": ">=6.1.0",
+          "cordova-ios": ">=4.3.1"
+        }
+    }
+  },
+  "author": "xu.li <AthenaLightenedMyPath@gmail.com>",
+  "license": "MIT"
+}

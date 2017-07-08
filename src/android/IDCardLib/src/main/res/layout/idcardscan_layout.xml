@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/idcardscan_layout">
+
+    <TextureView
+        android:id="@+id/idcardscan_layout_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.megvii.idcardlib.view.IDCardNewIndicator
+        android:id="@+id/idcardscan_layout_newIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <com.megvii.idcardlib.view.IDCardIndicator
+        android:id="@+id/idcardscan_layout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+    
+    <LinearLayout 
+         android:id="@+id/idcardscan_layout_idCardImageRel"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:visibility="gone"
+         android:layout_marginBottom="30dip"
+         android:layout_alignParentBottom="true"
+        >
+        <com.megvii.idcardlib.view.AutoRatioImageview
+            android:id="@+id/idcardscan_layout_idCardImage"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sfz_front"
+            />
+        <TextView 
+            android:id="@+id/idcardscan_layout_idCardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            android:text="请将身份证正面置于框内"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/idcardscan_layout_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/idcardscan_layout_error_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#7f000000"
+        android:textColor="#ffffffff"
+        android:visibility="gone" />
+
+    <com.megvii.idcardlib.util.MyTextView
+        android:id="@+id/idcardscan_layout_topTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#7f000000"
+        android:textColor="#ffffffff"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/idcardscan_layout_horizontalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/idcardscan_layout_verticalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dip"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/debugRectangle"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangle"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_debug_info"
+            android:textColor="#FFFFFFFF"
+            android:gravity="left"/>
+    </LinearLayout>
+</RelativeLayout>
