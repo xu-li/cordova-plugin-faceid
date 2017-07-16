@@ -4,7 +4,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-faceid"
-    version="0.0.1">
+    version="0.1.0">
 
     <name>FaceID</name>
     <description>A cordova plugin, a JS version of FaceID SDK</description>
@@ -36,5 +36,39 @@
         <source-file src="src/android/FaceID.java" target-dir="src/xu/li/cordova/faceid" />
         <source-file src="src/android/licensemanager-v1.1.jar" target-dir="libs" />
         <framework src="src/android/IDCardLib" custom="true" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FaceID">
+                <param name="ios-package" value="CDVFaceID"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <dict>
+                <key>NSCameraUsageDescription</key>
+                <string>身份证检测需要相机权限</string>
+            </dict>
+        </config-file>
+
+
+        <!-- Plugin source code -->
+        <header-file src="src/ios/CDVFaceID.h" />
+        <source-file src="src/ios/CDVFaceID.m" />
+
+        <!-- Plugin resources -->
+        <resource-file src="src/ios/MGIDCardResource.bundle" />
+
+        <!-- Sub projects -->
+        <framework src="src/ios/MGBaseKit.framework" custom="true" />
+        <framework src="src/ios/MGIDCard.framework" custom="true" />
+
+        <!-- Other required frameworks -->
+        <framework src="AVFoundation.framework" />
+        <framework src="CoreMedia.framework" />
+        <framework src="libc++.tbd" />
     </platform>
 </plugin>

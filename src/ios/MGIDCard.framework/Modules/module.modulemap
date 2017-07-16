@@ -1,0 +1,6 @@
+framework module MGIDCard {
+  umbrella header "MGIDCard.h"
+
+  export *
+  module * { export * }
+}

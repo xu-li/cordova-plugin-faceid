@@ -1,0 +1,26 @@
+/* 
+  MGIDCard.strings
+  MGIDCard
+
+  Created by 张英堂 on 15/12/28.
+  Copyright © 2015年 megvii. All rights reserved.
+*/
+
+
+
+"card_error_title1" = "未检测到身份证";
+"card_error_title2" = "请翻到正面";
+"card_error_title3" = "请翻到反面";
+"card_error_title4" = "请将身份证摆正";
+"card_error_title5" = "请靠近些拍摄";
+"card_error_title6" = "请离远些拍摄";
+"card_error_title7" = "请调整拍摄位置，以去除光斑";
+"card_error_title8" = "请将身份证与提示框对齐";
+"card_error_title9" = "请调整拍摄位置，以去除光斑";
+"card_error_title10" = "请将身份证与提示框对齐";
+
+/** 以下检测身份证时候的错误不会再出现  */
+"card_error_title11" = "QUALITY_FAILED_TYPE_FAKE";
+"card_error_title12" = "QUALITY_FAILED_TYPE_BRIGHTNESSTOOLOW";
+"card_error_title12" = "QUALITY_FAILED_TYPE_BRIGHTNESSTOOHIGH";
+

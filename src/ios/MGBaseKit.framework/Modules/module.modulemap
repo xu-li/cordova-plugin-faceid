@@ -1,0 +1,6 @@
+framework module MGBaseKit {
+  umbrella header "MGBaseKit.h"
+
+  export *
+  module * { export * }
+}
