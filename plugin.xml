@@ -36,6 +36,7 @@
         <source-file src="src/android/FaceID.java" target-dir="src/xu/li/cordova/faceid" />
         <source-file src="src/android/licensemanager-v1.1.jar" target-dir="libs" />
         <framework src="src/android/IDCardLib" custom="true" />
+        <framework src="src/android/livenesslib" custom="true" />
     </platform>
 
     <!-- ios -->
