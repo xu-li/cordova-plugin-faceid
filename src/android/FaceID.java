@@ -4,11 +4,9 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 
-import com.bajiepocket.wallet.R;
 import com.megvii.idcardlib.IDCardScanActivity;
 import com.megvii.idcardquality.IDCardQualityLicenseManager;
 import com.megvii.licensemanager.Manager;
@@ -213,7 +211,11 @@ public class FaceID extends CordovaPlugin
         JSONObject result = new JSONObject();
         try {
             byte[] headshot = intent.getByteArrayExtra("result");
-            result.put("headshot", new String(Base64.encode(headshot, Base64.NO_WRAP), "US-ASCII"));
+            if (headshot != null && headshot.length > 0) {
+                result.put("headshot", new String(Base64.encode(headshot, Base64.NO_WRAP), "US-ASCII"));
+            } else {
+                result.put("headshot", "");
+            }
             callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
         } catch (UnsupportedEncodingException ex1) {
             callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.ERROR));

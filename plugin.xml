@@ -66,6 +66,7 @@
         <!-- Sub projects -->
         <framework src="src/ios/MGBaseKit.framework" custom="true" />
         <framework src="src/ios/MGIDCard.framework" custom="true" />
+        <framework src="src/ios/MGLivenessDetection.framework" custom="true" />
 
         <!-- Other required frameworks -->
         <framework src="AVFoundation.framework" />
