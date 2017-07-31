@@ -1,0 +1,33 @@
+/* 
+  MGFaceDetection.strings
+  MGFaceDetection
+
+  Created by 张英堂 on 15/12/23.
+  Copyright © 2015年 megvii. All rights reserved.
+*/
+
+"face_check_error1" = "请垂直握紧手机";
+"face_check_error2" = "请让我看到您的正脸";
+"face_check_error3" = "请让我看到您的正脸";
+"face_check_error4" = "请让我看到您的正脸";
+"face_check_error5" = "请让光线再亮点";
+"face_check_error6" = "请让光线再暗点";
+"face_check_error7" = "请再靠近一些";
+"face_check_error8" = "请距离屏幕远一些";
+"face_check_error9" = "请避免侧光和背光";
+"face_check_error10" = "请将正脸置于取景框内";
+"face_check_error11" = "没问题，请保持";
+"face_check_error12" = "请勿遮挡眼睛";
+"face_check_error13" = "请勿遮挡嘴";
+
+
+"face_check_title" = "完成";
+"face_check_title1" = "请将正脸置于取景框内";
+"face_check_title2" = "没问题，请保持";
+"face_check_title3" = "检测完成";
+
+
+"face_check_eye" = "眨眼";
+"face_check_mouse" = "张嘴";
+"face_check_header_3" = "左右转头";
+"face_check_header_1" = "上下点头";

@@ -62,6 +62,7 @@
 
         <!-- Plugin resources -->
         <resource-file src="src/ios/MGIDCardResource.bundle" />
+        <resource-file src="src/ios/MGLiveResource.bundle" />
 
         <!-- Sub projects -->
         <framework src="src/ios/MGBaseKit.framework" custom="true" />
