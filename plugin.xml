@@ -4,7 +4,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-faceid"
-    version="0.1.0">
+    version="1.0.0">
 
     <name>FaceID</name>
     <description>A cordova plugin, a JS version of FaceID SDK</description>
