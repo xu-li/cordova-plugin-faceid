@@ -1,0 +1,6 @@
+framework module MGLivenessDetection {
+  umbrella header "MGLivenessDetection.h"
+
+  export *
+  module * { export * }
+}

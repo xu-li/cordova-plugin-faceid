@@ -48,7 +48,7 @@
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+        <config-file target="*-Info.plist" parent="/*">
             <dict>
                 <key>NSCameraUsageDescription</key>
                 <string>身份证检测需要相机权限</string>

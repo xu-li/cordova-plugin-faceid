@@ -14,7 +14,8 @@
 @property (nonatomic, strong) NSString *callbackId;
 
 - (void)auth:(CDVInvokedUrlCommand *)command;
-- (void)takePicture:(CDVInvokedUrlCommand *)command;
+- (void)takeIDCardPicture:(CDVInvokedUrlCommand *)command;
+- (void)takeHeadshotPicture:(CDVInvokedUrlCommand *)command;
 
 
 @end
