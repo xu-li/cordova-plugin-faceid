@@ -4,7 +4,7 @@
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-faceid"
-    version="1.0.0">
+    version="1.0.1">
 
     <name>FaceID</name>
     <description>A cordova plugin, a JS version of FaceID SDK</description>
@@ -48,11 +48,8 @@
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="/*">
-            <dict>
-                <key>NSCameraUsageDescription</key>
-                <string>身份证检测需要相机权限</string>
-            </dict>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>身份证检测需要相机权限</string>
         </config-file>
 
 
